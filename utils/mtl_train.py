@@ -164,7 +164,7 @@ def train_model(dataloaders, model, device, semantic_color, phase_lists, n_class
                 # track history if only in train
                 with torch.set_grad_enabled(phase == 'train'):
                     outputs, segments, sigma = model(inputs_haze, True)
-                    loss = calc_loss(outputs, gt_clear, segments, labels.long(), metrics, sigma)
+                    loss = calc_loss(criterion, outputs, gt_clear, segments, labels.long(), metrics, sigma)
                     
                     # backpropagation in training phase
                     if phase == 'train':
