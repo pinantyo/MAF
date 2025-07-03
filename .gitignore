@@ -3,6 +3,14 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+ckpt/dehazing/*
+ckpt/mtl/*
+
+dataset/GID5
+dataset/SateHaze1k
+
+image/*
+
 # C extensions
 *.so
 
