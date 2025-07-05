@@ -9,7 +9,7 @@ ckpt/mtl/*
 dataset/GID5
 dataset/SateHaze1k
 
-image/*
+image/MTL2BranchAdaptiveWeights/*
 
 # C extensions
 *.so
